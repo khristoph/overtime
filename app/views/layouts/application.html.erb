@@ -3,7 +3,6 @@
   <head>
     <title>Overtime</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -19,5 +18,8 @@
       <div class="col-md-3">
       </div>
     </div>
+
+    <%= js add_gritter(flash[:notice], title: "Item Tracker Notification", sticky: false, time: 5000) %>
+
   </body>
 </html>
