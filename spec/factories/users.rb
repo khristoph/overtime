@@ -18,6 +18,7 @@ FactoryBot.define do
     email { generate :email}
     password 'asdfasdf'
     password_confirmation 'asdfasdf'
+    type 'AdminUser'
   end
 
 end
