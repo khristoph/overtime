@@ -1,1 +1,23 @@
-<%= @post.inspect %>
+<div>
+  <h2><%= @post.rationale%></h2>
+</div>
+
+<hr>
+
+<div>
+  <h3><span>User:</span> <%= @post.user.full_name %></h3>
+</div>
+
+<div>
+  <h3><span>Time Created:</span> <%= @post.created_at %></h3>
+</div>
+
+<div>
+  <h3><span>Incident Date:</span> <%= @post.date %></h3>
+</div>
+
+<div>
+  <h3><span>Status:</span> <%= @post.status %></h3>
+</div>
+
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary' if policy(@post).update? %>
