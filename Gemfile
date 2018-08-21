@@ -20,7 +20,7 @@ gem 'administrate', '~> 0.9.0'
 gem 'bourbon'
 gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 
 
