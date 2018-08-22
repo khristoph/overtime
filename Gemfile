@@ -19,6 +19,10 @@ gem 'gritter', '~> 1.2'
 gem 'administrate', '~> 0.9.0'
 gem 'bourbon'
 gem 'pundit', '~> 1.1'
+gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
+gem 'dotenv-rails'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'rails_12factor'
 
 
 group :development, :test do
