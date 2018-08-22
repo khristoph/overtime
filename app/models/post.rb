@@ -4,4 +4,10 @@ class Post < ApplicationRecord
   validates_presence_of :date, :rationale, :overtime_request
 
   scope :posts_by, ->(user) { where(user_id: user.id) }
+
+  private
+
+  # def update_audit_log
+  #   audit_log = AuditLog.where(user_id, start_date: (self.date - 7.days))
+  # end
 end
