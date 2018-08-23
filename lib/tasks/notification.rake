@@ -1,9 +1,12 @@
 namespace :notification do
   desc "Sends SMS notification to administrator when a maintenace request is made."
   task sms: :environment do
-    #Run when a request is made.
-    #Send a message that has info on the request.
-    # SmsTool.send_sms()
+    admin_users = AdminUser.all
+    notification_message = "Please log into the maintenance management dashboard to view the request: https://ah-maintenance.herokuapp.com/"
+
+    admin_users.each do |admin|
+      SmsTool.send_sms(number: admin.phone, message: notification_message)
+    end
   end
 
 
