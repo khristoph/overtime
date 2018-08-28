@@ -5,12 +5,12 @@
                     phone: "1234567890")
 puts "1 User created"
 
-AdminUser.create!(email: "admin@test.com",
+AdminUser.create!(email: "christopherfriedman@gmail.com",
                  password: "asdfasdf",
                  password_confirmation: "asdfasdf",
                  first_name: "Admin",
-                 last_name: "Snow",
-                 phone:1234567899)
+                 last_name: "Friedman",
+                 phone:8184068841)
 puts "Admin Created"
 
 AuditLog.create!(user_id: @user.id, status: 0, start_date: (Date.today - 6.days))
