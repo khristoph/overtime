@@ -5,6 +5,7 @@ namespace :notification do
     notification_message = "Please log into the maintenance management dashboard to view the request: https://ah-maintenance.herokuapp.com/"
 
     admin_users.each do |admin|
+      AuditLog.create!()
       SmsTool.send_sms(number: admin.phone, message: notification_message)
     end
   end
